@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-   8859-1">
+      <title>Menghitung Luas Segitiga</title>
+      <script type="text/javascript">
+
+            function hitungLuas(){
+                alas=document.getElementById("txtAlas").value;
+                tinggi=document.getElementById("txtTinggi").value;
+                Luas=1/2*alas*tinggi;
+                document.getElementById("txtLuas").value = Luas;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="app">
+            Menghitung Luas Segitiga<br/>
+            <table>
+                <tr>
+                    <td>Alas</td>
+                    <td>:</td>
+                    <td><input type="text" id="txtAlas" name="txtAlas"></td>
+                </tr>
+                <tr>
+                    <td>Tinggi</td>
+                    <td>:</td>
+                    <td><input type="text" id="txtTinggi" name="txtTinggi"></td>
+                </tr>
+                <tr>
+                    <td>Luas</td>
+                    <td>:</td>
+                    <td><input type="text" id="txtLuas" name="txtLuas"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="btnHitung" value="Hitung Luas"onclick="hitungLuas();"><td/>
+                </tr>
+            </table>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <body>
+<html>
